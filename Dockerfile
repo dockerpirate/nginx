@@ -1,4 +1,6 @@
-FROM nginx
+ARG NGINX
+
+FROM nginx:$NGINX
 
 # to get nginx_more_headers
 RUN apt-get update && apt-get install -y nginx-extras && \
