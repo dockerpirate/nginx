@@ -3,6 +3,9 @@ sudo: required
 env:
   global:
     - DOCKER_REPO=dockerpirate/nginx
+    - ALPINE_M=3
+    - ALPINE_P=12
+    - NGINX=1.19.0
 before_deploy:
   - export GIT_TAG=$TRAVIS_BRANCH
 before_install:
